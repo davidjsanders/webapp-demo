@@ -6,7 +6,7 @@
 		<!-- Update D Sanders : 15 Nov 2016 -->
         <!-- Initial PHP Script -->
         <?php 
-            if ( isset$_SERVER["DEBUG"]() ) {
+            if ( !empty($_SERVER["DEBUG"]) ) {
 				error_reporting(E_ALL);
 				ini_set('display_errors', 'On');
             }
