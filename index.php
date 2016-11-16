@@ -3,6 +3,7 @@
     <head>
         <title> List of all the mobile devices </title>
         <meta charset="utf-8" />
+		<!-- Update D Sanders : 15 Nov 2016 -->
         <!-- Initial PHP Script -->
         <?php 
             /*
