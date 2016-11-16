@@ -9,7 +9,7 @@
              * Set the include path for all includes on this page.
              */
             $path = $_SERVER['DOCUMENT_ROOT'];
-            $path .= "/wk6hia/includes/";
+            $path .= "/includes/";
             set_include_path($path);
             include "includedCSS.php"; 
             include "range.inc";
