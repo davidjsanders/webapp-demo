@@ -32,11 +32,11 @@
             $resultRating = 0;
 
             /*
-             * Query will select all the fields from dsandersDevices for the
+             * Query will select all the fields from dsandersdevices for the
              * refNo passed.
              */
             $queryStatement = "select name, deviceType, colour, stockLevel, salesThisMonth, customerRating ".
-                              "from dsandersDevices ".
+                              "from dsandersdevices ".
                               "where refNo = ? ";
 
             /*
@@ -135,7 +135,7 @@
          * Build the SQL command string. 
          */
         $queryStatement = 
-                "update dsandersDevices ".
+                "update dsandersdevices ".
                 "set name = ?, ".
                     "deviceType = ?, ".
                     "colour = ?, ".

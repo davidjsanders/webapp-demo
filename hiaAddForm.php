@@ -24,8 +24,8 @@
         /*
          * Build the SQL command string. 
          */
-            $queryStatement = "insert into dsandersDevices values (".
-                    " (select max(d.refno)+1 from dsandersDevices as d), ".
+            $queryStatement = "insert into dsandersdevices values (".
+                    " (select max(d.refno)+1 from dsandersdevices as d), ".
                     " ?, ".
                     " ?, ".
                     " ?, ".
