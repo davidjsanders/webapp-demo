@@ -80,7 +80,7 @@
                 $selectorLength = count($selectorArray);
 
                 /* Prepare the SQL Delete command */
-                $deleteStatement = "delete from dsandersDevices where refNo = ?";
+                $deleteStatement = "delete from dsandersdevices where refNo = ?";
 
                 /* Prepare the SQL Delete statement with the database */
                 $stmt = $mysqli->prepare($deleteStatement);
@@ -282,7 +282,7 @@
                   * change the behavior of a query (see references above).
                   */
                  $queryStatement = "select refno, name, deviceType, colour, stockLevel, salesThisMonth, customerRating ".
-                                   "from dsandersDevices ".
+                                   "from dsandersdevices ".
                                    "where refno ".$refNoQuery." ? ".
                                    "or name ".$nameQuery." ? ".
                                    "or deviceType ".$typeQuery." ? ".
@@ -297,8 +297,6 @@
                   * Issue the prepare statement to tell the database to get the
                   * query ready.
                   */
-                 $stmt = $mysqli->prepare($queryStatement);
-                 
                  /*
                   * Bind the parameters for the query. The isssi string specifies
                   * we are passing in five parameters, the first and last are
