@@ -58,7 +58,7 @@
 
         /* Include the database connection info                      */
         /* include "db.inc"; */
-        $mysqli = new mysqli($_SERVER["DB_HOST"], $_SERVER["DB_USER"], $_SERVER["DB_PASS"]);
+        $mysqli = new mysqli($_SERVER["DB_HOST"], $_SERVER["DB_USER"], $_SERVER["DB_PASS"], $_SERVER["DB_DB"]);
 
         /*
          * Check if the page has been called from a post
@@ -306,7 +306,7 @@
                   * we are passing in five parameters, the first and last are
                   * integers (i) and the other three are strings (s).
                   */
-                 /* $stmt->bind_param(
+                 $stmt->bind_param(
                          "isssiii",
                          $queryRefNo,
                          $queryName,
@@ -316,7 +316,7 @@
                          $querySales,
                          $queryRating
                          );
-                 */
+                 
                  /*
                   * Execute the query BUT do NOT fetch any rows.
                   */
