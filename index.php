@@ -56,7 +56,6 @@
         /* Include the database connection info                      */
         /* include "db.inc"; */
         $mysqli = new mysqli($_SERVER["DB_HOST"], $_SERVER["DB_USER"], $_SERVER["DB_PASS"]);
-        echo "mysqli is set to ".$mysqli
 
         /*
          * Check if the page has been called from a post
@@ -114,7 +113,7 @@
         <!-- #mainSection is where ALL user output is shown.                 -->
         <!--                                                                 -->
         <div id="mainSection">
-		    <h1><?php echo "APP_FOO is ".$_SERVER['APP_FOO'] ?></h1>
+		    <h1><?php echo "mysqli is ".$mysqli ?></h1>
             <h1>11-15-2016: Mobile Devices in the Database...</h1>
             <?php
                 /*
