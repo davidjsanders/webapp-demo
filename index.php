@@ -116,7 +116,7 @@
         <!-- #mainSection is where ALL user output is shown.                 -->
         <!--                                                                 -->
         <div id="mainSection">
-		    <h1><?php echo "21:41 - " ?></h1>
+		    <h1><?php echo "21:47 - " ?></h1>
 				 <!-- echo "PHP Info ".$mysqli->stat() -->
             <h1>11-15-2016: Mobile Devices in the Database...</h1>
             <?php
@@ -306,6 +306,17 @@
                   * we are passing in five parameters, the first and last are
                   * integers (i) and the other three are strings (s).
                   */
+                 /* $stmt->bind_param(
+                         "isssiii",
+                         $queryRefNo,
+                         $queryName,
+                         $queryType,
+                         $queryColor,
+                         $queryStockLevel,
+                         $querySales,
+                         $queryRating
+                         );
+                 */
                  /*
                   * Execute the query BUT do NOT fetch any rows.
                   */
