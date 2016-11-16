@@ -116,7 +116,7 @@
         <!-- #mainSection is where ALL user output is shown.                 -->
         <!--                                                                 -->
         <div id="mainSection">
-		    <h1><?php echo "21:41 - ".phpinfo() ?></h1>
+		    <h1><?php echo "21:41 - " ?></h1>
 				 <!-- echo "PHP Info ".$mysqli->stat() -->
             <h1>11-15-2016: Mobile Devices in the Database...</h1>
             <?php
@@ -134,15 +134,15 @@
                  $doCatchAll = "";          // If no fields were given, we should
                                             // perform a catch all query
                  
-                 $queryRefNo = "";          // The value entered by the user in QBE
+                 $queryRefNo = " ";          // The value entered by the user in QBE
                  $refNoQuery = "=";         // The condition selected by the user
-                 $queryName = "";           // The value entered by the user in QBE
+                 $queryName = " ";           // The value entered by the user in QBE
                  $nameQuery = "=";          // The condition selected by the user
-                 $queryType = "";           // The value entered by the user in QBE
+                 $queryType = " ";           // The value entered by the user in QBE
                  $typeQuery = "=";          // The condition selected by the user
                  $queryStockLevel = "";     // The value entered by the user in QBE
                  $stockQuery = "=";         // The condition selected by the user
-                 $queryColor = "";          // The value entered by the user in QBE
+                 $queryColor = " ";          // The value entered by the user in QBE
                  $colorQuery = "=";         // The value entered by the user in QBE
                  $salesQuery = "=";         // The value entered by the user in QBE
                  $ratingQuery = "=";        // The value entered by the user in QBE
