@@ -116,7 +116,8 @@
         <!-- #mainSection is where ALL user output is shown.                 -->
         <!--                                                                 -->
         <div id="mainSection">
-		    <h1><?php echo "21:17 - Validating DB connection " ?></h1>
+		    <h1><?php echo "21:41 - ".phpinfo() ?></h1>
+				 <!-- echo "PHP Info ".$mysqli->stat() -->
             <h1>11-15-2016: Mobile Devices in the Database...</h1>
             <?php
                 /*
@@ -305,7 +306,6 @@
                   * we are passing in five parameters, the first and last are
                   * integers (i) and the other three are strings (s).
                   */
-				 echo "MySQL Status ".$mysqli->stat()
                  $stmt->bind_param(
                          "isssiii", 
                          $queryRefNo, 
