@@ -15,7 +15,7 @@
         $loadFunction = "closeAndReturn();";
 
         /* Include the database connection info                      */
-        include "db.inc";
+		$mysqli = new mysqli($_SERVER["DB_HOST"], $_SERVER["DB_USER"], $_SERVER["DB_PASS"], $_SERVER["DB_DB"]);
 
         $queryName = $_POST["deviceName"];
         $queryType = $_POST["deviceType"];
