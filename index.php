@@ -113,7 +113,7 @@
         <!-- #mainSection is where ALL user output is shown.                 -->
         <!--                                                                 -->
         <div id="mainSection">
-		    <h1>Test <?php echo "Database host is ".$_ENV["DB_HOST"] ?></h1>
+		    <h1>Test <?php echo "Database host is ".$_ENV['DB_HOST']". Server root is "$_SERVER['DOCUMENT_ROOT'] ?></h1>
             <h1>11-15-2016: Mobile Devices in the Database...</h1>
             <?php
                 /*
