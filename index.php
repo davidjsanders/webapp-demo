@@ -113,7 +113,7 @@
         <!-- #mainSection is where ALL user output is shown.                 -->
         <!--                                                                 -->
         <div id="mainSection">
-		    <h1><?php echo "mysqli is ".$mysqli ?></h1>
+		    <h1><?php echo "21:17 - Validating DB connection " ?></h1>
             <h1>11-15-2016: Mobile Devices in the Database...</h1>
             <?php
                 /*
@@ -312,6 +312,7 @@
                          $querySales,
                          $queryRating
                          );
+                 echo "After bind param"
                  
                  /*
                   * Execute the query BUT do NOT fetch any rows.
