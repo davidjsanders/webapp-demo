@@ -305,6 +305,7 @@
                   * we are passing in five parameters, the first and last are
                   * integers (i) and the other three are strings (s).
                   */
+				 echo "MySQL Status ".$mysqli->stat()
                  $stmt->bind_param(
                          "isssiii", 
                          $queryRefNo, 
