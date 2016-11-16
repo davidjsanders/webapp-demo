@@ -312,7 +312,6 @@
                          $querySales,
                          $queryRating
                          );
-                 echo "After bind param"
                  
                  /*
                   * Execute the query BUT do NOT fetch any rows.
