@@ -113,7 +113,7 @@
         <!-- #mainSection is where ALL user output is shown.                 -->
         <!--                                                                 -->
         <div id="mainSection">
-		    <h1><?php echo "APP_FOO is ".$_ENV['APPSETTING_APP_FOO'] ?></h1>
+		    <h1><?php echo "APP_FOO is ".$_ENV['APP_FOO'] ?></h1>
             <h1>11-15-2016: Mobile Devices in the Database...</h1>
             <?php
                 /*
