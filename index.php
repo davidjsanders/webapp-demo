@@ -146,8 +146,6 @@
                  $salesQuery = "=";         // The value entered by the user in QBE
                  $ratingQuery = "=";        // The value entered by the user in QBE
 
-				 error_log("** queryRefNo is ".$queryRefNo, 0)
-
                  /* Check if the Ref No was filled in on the query form       */
 				 $queryRefNo = $_POST["deviceRefNo"];
                  if (!$queryRefNo) {
