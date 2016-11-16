@@ -147,9 +147,7 @@
                  $ratingQuery = "=";        // The value entered by the user in QBE
 
                  /* Check if the Ref No was filled in on the query form       */
-				 if ( isset() ) {
-				 	 $queryRefNo = $_POST["deviceRefNo"];
-				 }
+				 $queryRefNo = $_POST["deviceRefNo"];
                  if (!$queryRefNo) {
                      $emptyQueryFields++;
                  } else {
