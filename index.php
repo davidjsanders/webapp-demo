@@ -55,7 +55,7 @@
 
         /* Include the database connection info                      */
         /* include "db.inc"; */
-        $mysqli = new mysqli($_ENV["DB_HOST"], $_ENV["DB_USERNAME"], $_ENV["DB_PASSWORD"]);
+        $mysqli = new mysqli($_SERVER["DB_HOST"], $_SERVER["DB_USER"], $_SERVER["DB_PASS"]);
 
         /*
          * Check if the page has been called from a post
