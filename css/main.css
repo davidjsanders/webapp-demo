@@ -1,0 +1,156 @@
+/* Style the body of the document                                             */
+body {
+    background-color: white;
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 110px;
+    overflow: auto;
+    margin-bottom: 30px;
+}
+
+/* Style the devices table (i.e. the output) */
+#mobilesTable {
+    border: 2px solid darkblue;
+    box-shadow: 2px 2px blue;
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 650px;
+}
+
+/* Style the devices table caption */
+#mobilesTable caption {
+    text-align: left;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* Style the devices table headers */
+#mobilesTable th {
+    text-align: left;
+    vertical-align: bottom;
+    background-color: darkblue;
+    color: white;
+    padding: 5px;
+}
+
+/* Style the devices table odd rows (this is what enables banding of the table)*/
+#mobilesTable tr:nth-child(odd) {
+    background-color: #e3e3fc;
+}
+
+/* Style the devices table even rows (this is what enables banding of the table)*/
+#mobilesTable tr:nth-child(even) {
+    background-color: white;
+}
+
+/* Style the devices table when the user hovers over a row */
+#mobilesTable tr:hover {
+    background-color: #7979f0;
+    color: white;
+}
+
+/* Style the devices table data columns */
+#mobilesTable td {
+    padding-right: 10px;
+}
+
+/* Style the devices table selector (the checkbox) */
+#mobilesTable .selector {
+    text-align: center;
+}
+
+/* Right align key data items */
+#mobilesTable .right {
+    text-align: right;
+}
+
+/*
+ * Force labels to be inline-block style so they can a) take up the whole width
+ * of the parent container AND so the user can click anywhere on the <LABEL> not
+ * just in the <a> element.
+ */
+#mobilesTable label {
+    display: inline-block;
+    width: 100%;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding: 5px;
+}
+
+/*
+ * Set key columns to fixed widths so table layout DOES NOT change if a query
+ * is performed (e.g. the name field shortening because Blackberry Playbook is
+ * not part of the return results).
+ */
+#selectTH { width: 4%; }
+#refNoTH { width: 5%; }
+#nameTH {width: 25%; }
+#deviceTypeTH { width: 12%; }
+#colorTH { width: 10%; }
+
+/* Style the fieldset used to contain buttons */
+fieldset {
+    background-color: #eae2fa;
+    width: calc(100% - 30px);
+    min-width: 620px;
+    text-align: right;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* Style the div used to contain instructions */
+#instructionsDiv {
+    min-width: 630px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    background-color: linen;
+    border: 1px solid blue;
+    box-shadow: 2px 2px darkblue;
+    font-size: 0.9em;
+}
+
+h3 {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    font-size: medium;
+}
+
+/* Remove top margin from h3s when they're used with #instructionsDiv */
+#instructionsDiv h3 {
+    margin-top: 0px;
+}
+
+/* Style the buttons */
+.button {
+    display: inline-block;
+    color: buttontext;
+    width: 170px;
+    height: 32px;
+    vertical-align: middle;
+    text-align: center;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: buttonface;
+    border: 1px solid darkgray;
+    border-radius: 6px;
+    font-size: 0.8em;
+    box-shadow: 1px 1px buttonshadow;
+}
+
+/* Style the button when the user clicks (but doesn't release) the mouse */
+input.button:active {
+    border-style: inset;
+    border-top-style: inset;
+    border-top-width: 2px;
+    border-left-width: 2px;
+    box-shadow: -1px -1px buttonhighlight;
+    padding-left: 11px;
+    padding-right: 9px;
+    background-color: buttonhighlight;
+    width: 170px;
+    height: 31px;
+}
+

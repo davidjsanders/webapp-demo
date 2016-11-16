@@ -1,0 +1,41 @@
+#deviceRefNo {
+    background-color: #9933ff;
+    color: white;
+}
+
+/* Set the labels in the form to a standard size.*/
+label {
+    display: inline-block;
+    width: 165px;
+}
+
+/* Set the select drop down lists in the form to a standard size.*/
+select {
+    display: none;
+}
+
+#deviceType {
+    display: inline;
+    width: 100px;
+}
+
+form div {
+    padding: 10px;
+}
+
+/*
+ * Set the button class to a QBE specific size - .button is also defined in 
+ * main.css but this declaration cascades over the first definition to make it
+ * specific to the QBE form.
+ */
+.button {
+    width: 130px;
+}
+
+/* Style the buttons */
+
+input.button:active {
+    height: 32px;
+    width: 130px;
+}
+

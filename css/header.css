@@ -1,0 +1,74 @@
+/* 
+    Filename   : wk3dq1_headern.css
+    Purpose    : The header section CSS is contained here. It is very small and
+                 sets the display to provide the preferred header for the
+                 assignment.
+    Created on : 31-Oct-2014, 3:14:14 PM
+    Author     : David
+*/
+
+/* Style the header div                                                       */
+#header {
+    position: fixed;
+    top: 0px;
+    left : 0px;
+    width: 100%;
+    background-color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkblue;
+    height: 100px;
+    padding-bottom: 0px;
+    border-bottom: 3px solid darkblue;
+    overflow: hidden;
+}
+
+/* Style the image div                                                        */
+#headerImageDiv {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    width: 104px;
+    height: 74px;
+    color: white;
+    padding: 5px;
+    padding-right: 0px;
+}
+
+#headerStudentInfoDiv {
+    position: absolute;
+    top: 0px;
+    left: 125px;
+    right: 250px;
+    margin-top: 25px;
+}
+
+    #studentNameDiv {
+        font-size: x-large;
+        font-weight: bold;
+        margin: 0px;
+        border-bottom: 1px solid darkblue;
+    }
+
+    /* Style studentNameDiv differently if .dark is set                       */
+    .dark #studentNameDiv {
+        border-bottom: 1px solid white;
+    }
+
+    /* Style studentNameDiv differently if .twilight is set                   */
+    .twilight #studentNameDiv {
+        border-bottom: 1px solid black;
+    }
+
+    #assignmentTitleDiv {
+        font-size: large;
+        text-align: right;
+    }
+
+#universityLogoDiv {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 230px;
+}
+
