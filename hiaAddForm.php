@@ -1,4 +1,7 @@
 <?php
+    error_reporting(E_ALL);
+    ini_set('display_errors', 'On');
+
     $loadFunction = "addOnLoad();";
     /*
      * Set the include path for all includes on this page.
