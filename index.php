@@ -7,7 +7,7 @@
         <!-- Initial PHP Script -->
         <?php 
 			error_reporting(E_ALL);
-			ini_set('display_errors', 'On');
+			ini_set('display_errors', 'Off');
 
             /*
              * Set the include path for all includes on this page.
