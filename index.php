@@ -306,17 +306,6 @@
                   * we are passing in five parameters, the first and last are
                   * integers (i) and the other three are strings (s).
                   */
-                 /* $stmt->bind_param(
-                         "isssiii", 
-                         $queryRefNo, 
-                         $queryName, 
-                         $queryType, 
-                         $queryColor, 
-                         $queryStockLevel,
-                         $querySales,
-                         $queryRating
-                         );
-                 */
                  /*
                   * Execute the query BUT do NOT fetch any rows.
                   */
