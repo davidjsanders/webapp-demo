@@ -116,8 +116,7 @@
         <!-- #mainSection is where ALL user output is shown.                 -->
         <!--                                                                 -->
         <div id="mainSection">
-		    <h1><?php echo "21:53 - ", $mysqli->stat(), $_SERVER["DB_HOST"], $_SERVER["DB_USER"], $_SERVER["DB_PASS"], $_SERVER["DB_DB"] ?></h1>
-				 <!-- echo "PHP Info ".$mysqli->stat() -->
+		    <h1><?php echo "21:53 - ", $mysqli->stat() ?></h1>
             <h1>11-15-2016: Mobile Devices in the Database...</h1>
             <?php
                 /*
@@ -301,6 +300,7 @@
                   * Issue the prepare statement to tell the database to get the
                   * query ready.
                   */
+                 $stmt = $mysqli->prepare($queryStatement);
                  /*
                   * Bind the parameters for the query. The isssi string specifies
                   * we are passing in five parameters, the first and last are
